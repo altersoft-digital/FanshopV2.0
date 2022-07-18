@@ -154,7 +154,7 @@ select {
 }
 
 .heading-tertiary {
-  font-weight: 700;
+  /* font-weight: 700; */
   font-size: 2rem;
   line-height: 2.6rem;
   color: #181a1d;
