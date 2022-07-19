@@ -1,0 +1,235 @@
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .header__middle-nav_ul {
+    gap: 4.55rem;
+  }
+
+  .did-youknow__left-side {
+    padding: 2.9rem 0 4.1rem 3.3rem;
+  }
+}
+
+/**************************/
+/* BELOW 1040px (Tablets) */
+/**************************/
+
+@media (max-width: 65em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 83px;
+    z-index: 99999;
+    padding-right: 8.8rem;
+    width: 100%;
+  }
+
+  .mobile-nav {
+    box-shadow: 0px 4px 8px rgba(57, 48, 33, 0.2);
+    background-color: #fff;
+  }
+
+  .icon-mobile-nav[name="close-outline"] {
+    width: 20px;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .header__middle-nav_ul {
+    gap: 0;
+  }
+
+  .header__middle-nav_list {
+    padding: 3.2rem 0;
+    margin: 0 3.2rem;
+  }
+
+  .header__middle-nav_list:not(:last-child) {
+    border-bottom: 1px solid rgba(57, 48, 33, 0.1);
+  }
+
+  .section-sale__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-did-you-know {
+    grid-template-columns: 1fr;
+  }
+
+  .did-youknow__left-side {
+    border: 1px solid #e1e1e1;
+    border-bottom: none;
+  }
+
+  .did-youknow__right-side {
+    padding: 3.2rem;
+  }
+
+  .special-product__bigone {
+    grid-column: span 1;
+  }
+
+  .section-special-products__content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .special-product__bigone .sub-heading {
+    margin-top: 8px;
+    max-width: 45.6rem;
+  }
+
+  .special-product__smallone .heading-tertiary {
+    max-width: 28.7rem;
+  }
+
+  .special-product__bigone {
+    padding: 2.4rem;
+  }
+
+  .footer-1__heading-2 {
+    margin-top: 0;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    grid-gap: 4.8rem;
+  }
+
+  .footer-1__socials-box {
+    display: none;
+  }
+
+  .footer-1__socials-box-tablet {
+    display: block;
+  }
+}
+
+/**************************/
+/* BELOW 672px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 42em) {
+  .special-product__bigone {
+    grid-column: span 2;
+  }
+
+  .horizontal-border {
+    display: none;
+  }
+
+  .metis-naxva,
+  .metis-naxva:link,
+  .metis-naxva:visited {
+    display: none;
+  }
+
+  .section-special-products__header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .metis-naxva-mobile,
+  .metis-naxva-mobile:link,
+  .metis-naxva-mobile:visited {
+    display: block;
+    width: max-content;
+    margin: 3.2rem auto;
+    color: #ca003d;
+    background-color: #fff;
+    font-style: italic;
+  }
+
+  .advertisement-not-mobile {
+    display: none;
+  }
+
+  .advertisement-mobile {
+    display: block;
+  }
+
+  .footer-1__socials-box-tablet {
+    display: none;
+  }
+
+  .footer-1__socials-box {
+    display: none;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .footer-nav-mobile {
+    display: flex;
+    gap: 4.8rem;
+  }
+
+  .sale-product {
+    padding: 3rem 2rem 1.6rem 2rem;
+  }
+
+  .sale-product .img {
+    max-width: 127px;
+  }
+}
+
+/**************************/
+/* BELOW 480px (Phones) */
+/**************************/
+
+@media (max-width: 30em) {
+  .sale-product .special-product__title {
+    font-size: 1.6rem;
+  }
+
+  .new-product .img {
+    max-width: 254px;
+  }
+
+  .special-product__bigone .img {
+    max-width: 252px;
+  }
+
+  .swiper-not-mobile {
+    display: none !important;
+  }
+
+  .swiper-mobile {
+    display: flex !important;
+  }
+}
+
+/**************************/
+/* BELOW 384px (Phones) */
+/**************************/
+
+@media (max-width: 24em) {
+  .sale-product .special-product__title {
+    font-size: 1.4rem;
+  }
+}

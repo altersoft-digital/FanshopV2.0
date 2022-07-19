@@ -12,6 +12,7 @@
     <meta name="author" content="Ascended" />
     <link rel="stylesheet" href="./assets/css/general.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/queries.css" />
     <link
     rel="icon"
     type="image/svg"
@@ -76,31 +77,82 @@
           </ul>
         </nav>
       </header>
-      <div class="swiper swiper-header-posters">
+      <header class="header-mobile flex align-center space-between">
+        <div class="header-mobile__left-side flex align-center">
+          <button class="btn btn-burger-menu">
+            <img class="icon-mobile-nav" name="menu-outline" src="./assets/img/burgerMenu.svg" alt="Menu">
+            <img  class="icon-mobile-nav" name="close-outline" src="./assets/img/close_big.svg" alt="Menu">
+          </button>
+          <img src="./assets/img/profileGuyIcon.svg" alt="Profile">
+        </div>
+        <img src="./assets/img/gfflogo.svg" alt="Logo">
+        <div class="header-mobile__right-side flex align-center">
+          <img src="./assets/img/heartVector.svg" alt="Wishlist">
+          <img src="./assets/img/cartIcon.svg" alt="Cart">
+        </div>
+      </header>
+      <div class="mobile-menu">
+      <nav class="mobile-nav">
+        <ul class="header__middle-nav_ul flex flex-column">
+          <li class="header__middle-nav_list"><a href="index.html" class="header__middle-nav_link">Home</a></li>
+          <li class="header__middle-nav_list flex align-center space-between">
+            <a href="home.html" class="header__middle-nav_link ">GNT Kit</a>
+            <img src="/assets/img/downarrow.svg" alt="Down arrow icon" />
+          </li>
+          <li class="header__middle-nav_list flex align-center space-between">
+            <a href="#" class="header__middle-nav_link">Clothes</a>
+            <img src="/assets/img/downarrow.svg" alt="Down arrow icon" />
+          </li class="header__middle-nav_list">
+          <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Gifts</a></li>
+          <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Sales</a></li>
+        </ul>
+      </nav>
+    </div>
+      <div class="swiper swiper-header-posters swiper-not-mobile">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide ">
             <img src="assets/img/main-header-img.png" alt="Poster image" class="main-header__poster">
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide ">
             <img src="assets/img/main-header-img.png" alt="Poster image" class="main-header__poster">
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide ">
             <img src="assets/img/main-header-img.png" alt="Poster image" class="main-header__poster">
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide ">
             <img src="assets/img/main-header-img.png" alt="Poster image" class="main-header__poster">
           </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
+      <div class="swiper swiper-header-posters swiper-mobile">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ">
+            <img src="assets/img/kvara.png" alt="Poster image" class="main-header__poster">
+          </div>
+          <div class="swiper-slide ">
+            <img src="assets/img/mamarda.png" alt="Poster image" class="main-header__poster">
+          </div>
+          <div class="swiper-slide ">
+            <img src="assets/img/mamardamere.png" alt="Poster image" class="main-header__poster">
+          </div>
+          <div class="swiper-slide ">
+            <img src="assets/img/kashia.png" alt="Poster image" class="main-header__poster">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </main>
-    <section class="section-special-products container">
-      <header class="section-special-products__header">
+    <section class="section-special-products">
+      <div class="out-container">
+      <header class="section-special-products__header tablet-margins">
         <h2 class="heading-secondary">გამორჩეული პროდუქცია</h2>
-        <div class="section-special-products__header-border"></div>
-        <a href="#" class="btn btn-primary">მეტის ნახვა</a>
+        <div class="section-special-products__header-border horizontal-border"></div>
+        <a href="#" class="btn btn-primary metis-naxva">მეტის ნახვა</a>
       </header>
-      <div class="section-special-products__content grid grid--4-cols">
+    </div>
+    <div class="container">
+      <div class="section-special-products__content grid grid--4-cols parent-border">
         <div class="special-product special-product__bigone">
           <img src="assets/img/product-1.png" alt="product image" class="img">
           <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
@@ -134,18 +186,27 @@
           <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
         </div>
       </div>
+      <a href="#" class="btn btn-primary metis-naxva metis-naxva-mobile">მეტის ნახვა</a>
+    </div>
     </section>
-    <section class="section-me-var-saqartvelo container">
-<img src="assets/img/mevarsaqartvelo.png" alt="Poster" class="img">
-    </section>
-    <section class="section-new-collection container">
-      <header class="section-special-products__header">
+    <aside class="advertisement swiper swiper-advertisement container advertisement-not-mobile">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="assets/img/nakrebige.png" alt="advertisement" class="img"></div>
+        <div class="swiper-slide"><img src="assets/img/mevarsaqartvelo.png" alt="advertisement" class="img"></div>
+        <div class="swiper-slide"><img src="assets/img/mevarsaqartvelored.png" alt="advertisement" class="img"></div>
+      </div>
+    </aside>
+    <section class="section-new-collection">
+      <div class="out-container">
+      <header class="section-special-products__header tablet-margins">
         <h2 class="heading-secondary">ახალი კოლექცია</h2>
-        <div class="section-special-products__header-border"></div>
-        <a href="#" class="btn btn-primary">მეტის ნახვა</a>
+        <div class="section-special-products__header-border horizontal-border"></div>
+        <a href="#" class="btn btn-primary metis-naxva">მეტის ნახვა</a>
       </header>
+    </div>
+    <div class="container">
       <div class="swiper swiper-new-colection">
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper parent-border">
         
           <div class="swiper-slide special-product new-product">
             <img src="assets/img/product-1.png" alt="product image" class="img">
@@ -180,17 +241,27 @@
         </div>
         <div class="swiper-pagination"></div>
       </div>
+      <a href="#" class="btn btn-primary metis-naxva metis-naxva-mobile">მეტის ნახვა</a>
+    </div>
     </section>
-    <section class="section-me-var-saqartvelo container">
-      <img src="assets/img/mevarsaqartvelored.png" alt="" class="img">
-    </section>
-    <section class="section-sale container">
-      <header class="section-special-products__header">
+    <aside class="advertisement swiper swiper-advertisement container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide advertisement-not-mobile"><img src="assets/img/nakrebige.png" alt="advertisement" class="img"></div>
+        <div class="swiper-slide advertisement-not-mobile"><img src="assets/img/mevarsaqartvelo.png" alt="advertisement" class="img"></div>
+        <div class="swiper-slide advertisement-not-mobile"><img src="assets/img/mevarsaqartvelored.png" alt="advertisement" class="img"></div>
+        <div class="swiper-slide advertisement-mobile"><img src="assets/img/mevarsaqartvelo-mobile.png" alt="advertisement" class="img"></div>
+      </div>
+    </aside>
+    <section class="section-sale">
+      <div class="out-container">
+      <header class="section-special-products__header tablet-margins">
         <h2 class="heading-secondary secondary__red">20% ფასდაკლება</h2>
-        <div class="section-special-products__header-border"></div>
-        <a href="#" class="btn btn-primary">მეტის ნახვა</a>
+        <div class="section-special-products__header-border horizontal-border"></div>
+        <a href="#" class="btn btn-primary metis-naxva">მეტის ნახვა</a>
       </header>
-      <div class="section-sale__content grid grid--4-cols">
+    </div>
+      <div class="container">
+      <div class="section-sale__content grid grid--4-cols parent-border">
           <div class="special-product sale-product">
             <img src="assets/img/product-1.png" alt="product image" class="img">
             <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
@@ -216,8 +287,10 @@
             <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
           </div>
       </div>
+      <a href="#" class="btn btn-primary metis-naxva metis-naxva-mobile">მეტის ნახვა</a>
+    </div>
     </section>
-    <section class="section-did-you-know container grid grid--2-cols space-between">
+    <section class="section-did-you-know container grid grid--2-cols space-between swiper-not-mobile">
       <div class="did-youknow__left-side">
         <div class="did-youknow__left-side-content">
 
@@ -241,6 +314,7 @@
             <input type="email" name="" id="" class="footer-1__input" placeholder="შეიყვანე მეილი">
             <button type="submit" class="btn btn-primary">გამოწერა</button>
           </form>
+        <div class="footer-1__socials-box">
           <h4 class="footer-1__heading-2">გამოიწერე სიახლეები</h4>
           <div class="footer-1__socials flex align-center">
             <div class="social"><img src="assets/img/facebook.svg" alt="facebook"></div>
@@ -248,6 +322,7 @@
             <div class="social"><img src="assets/img/twitter.svg" alt="twitter"></div>
             <div class="social"><img src="assets/img/youtube.svg" alt="youtube"></div>
           </div>
+        </div>
         </div>
         <nav class="footer-nav grid autoflow space-between">
           <ul class="footer-nav-ul flex flex-column">
@@ -271,9 +346,56 @@
             <li class="footer-nav-list"><a class="footer-nav-link" href="#">კოლექცია 2021</a></li>
           </ul>
       </nav>
+      <nav class="footer-nav-mobile flex flex-column">
+        <div class="footer-nav-mobile-single">
+
+          <div class="drop-down__before-box flex align-center space-between">
+            <h4 class="footer-nav-heading">2022 წლის კოლექცია</h4>
+            <img src="./assets/img/downarrow.svg" alt="down arrow" class="footer-down-arrow">
+          </div>
+        <ul class="footer-nav-ul flex flex-column drop-down__hidden-box">
+          <li class="footer-nav-list"><a class="footer-nav-link" href="#">მაისურები</a></li>
+          <li class="footer-nav-list"><a class="footer-nav-link" href="#">კეპები</a></li>
+          <li class="footer-nav-list"><a class="footer-nav-link" href="#">ჰუდები</a></li>
+          <li class="footer-nav-list"><a class="footer-nav-link" href="#">ჩანთები</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-mobile-single">
+
+        <div class="drop-down__before-box flex align-center space-between">
+          <h4 class="footer-nav-heading">ეროვნული ნაკრები</h4>
+          <img src="./assets/img/downarrow.svg" alt="down arrow" class="footer-down-arrow">
+        </div>
+        <ul class="footer-nav-ul flex flex-column drop-down__hidden-box">
+          <li class="footer-nav-list"><a class="footer-nav-link" href="#">კოლექცია 2022</a></li>
+          <li class="footer-nav-list"><a class="footer-nav-link" href="#">კოლექცია 2021</a></li>
+        </ul>
+    </div>
+    <div class="footer-nav-mobile-single">
+
+      <div class="drop-down__before-box flex align-center space-between">
+        <h4 class="footer-nav-heading">საჩუქარი</h4>
+        <img src="./assets/img/downarrow.svg" alt="down arrow" class="footer-down-arrow">
+      </div>
+      <ul class="footer-nav-ul flex flex-column drop-down__hidden-box">
+        <li class="footer-nav-list"><a class="footer-nav-link" href="#">კოლექცია 2022</a></li>
+        <li class="footer-nav-list"><a class="footer-nav-link" href="#">კოლექცია 2021</a></li>
+      </ul>
+    </div>
+
+    </nav>
+      <div class="footer-1__socials-box-tablet">
+        <h4 class="footer-1__heading-2">გამოიწერე სიახლეები</h4>
+        <div class="footer-1__socials flex align-center">
+          <div class="social"><img src="assets/img/facebook.svg" alt="facebook"></div>
+          <div class="social"><img src="assets/img/instagram.svg" alt="instagram"></div>
+          <div class="social"><img src="assets/img/twitter.svg" alt="twitter"></div>
+          <div class="social"><img src="assets/img/youtube.svg" alt="youtube"></div>
+        </div>
+      </div>
       </div>
       <div class="footer-bottom">
-        <p class="copyright-p center-text">Ⓒ საქართველოს ფეხბურთის ფედერაცია 2022 - ყველა უფლება დაცულია.</p>
+        <p class="copyright-p center-text">Ⓒ საქართველოს ფეხბურთის ფედერაცია <span class="year">2022</span> - ყველა უფლება დაცულია.</p>
       </div>
     </footer>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
