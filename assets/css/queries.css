@@ -36,7 +36,7 @@
   }
 
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 83px;
     z-index: 99999;
     padding-right: 8.8rem;
@@ -195,6 +195,10 @@
 
   .sale-product .img {
     max-width: 127px;
+  }
+
+  .sponsors-aside img:nth-child(3) {
+    margin-top: 6rem;
   }
 }
 

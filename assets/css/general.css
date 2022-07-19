@@ -53,7 +53,7 @@
   text-decoration: none;
   box-sizing: border-box;
   scrollbar-width: 0;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 html {
@@ -151,6 +151,10 @@ select {
   justify-items: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .center-text {
   text-align: center;
 }
@@ -214,6 +218,5 @@ select {
 
 .btn-primary:hover,
 .btn-primary:active {
-  color: #ca003d;
-  background-color: #fff;
+  transform: scale(1.1);
 }

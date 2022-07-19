@@ -5,6 +5,7 @@
 
 .header {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  transition: none;
 }
 
 .header-box {
@@ -92,6 +93,7 @@
   flex-direction: column;
   gap: 2.4rem;
   /* overflow: initial !important; */
+  margin-top: 10px;
 }
 
 .main-header__poster {
@@ -115,12 +117,59 @@
   background: #000000 !important;
 }
 
+/* STICKY */
+
+/* STICKY NAVIGATION */
+.sticky .header,
+.sticky .header-mobile {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8.1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); */
+}
+
+.sticky .header-mobile {
+  height: 83px;
+}
+
+.after-header {
+  transition: none;
+}
+
+.sticky + .after-header {
+  margin-top: 9.8rem;
+}
+
+.sticky + .section-single-product {
+  margin-top: 11.4rem;
+}
+
+.sticky .after-header {
+  margin-top: 9.1rem;
+}
+
+.sticky .after-header-mobile {
+  margin-top: 93px;
+}
+
+.swiper-header-posters {
+  transition: none;
+}
+
 /* mobile */
 
 .header-mobile {
   padding: 1.6rem 3.2rem;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
   display: none;
+  z-index: 999999999999;
+  transition: none;
 }
 
 .header-mobile__left-side,
@@ -260,8 +309,14 @@
   margin-top: 2.4rem;
 }
 
+/* .swiper-wrapper {
+  border: 1px solid #e1e1e1;
+} */
+
 .new-product {
   padding: 6rem 0 3.5rem 0;
+  border: 1px solid #e1e1e1;
+  /* border-bottom: none; */
 }
 
 .new-product .img {
@@ -283,6 +338,11 @@
   margin-bottom: 16.8rem;
   padding: 6.4rem 0;
   border: 1px solid #e1e1e1;
+  gap: 3rem;
+}
+
+.sponsors-aside img {
+  max-width: max-content;
 }
 
 /**********************END****************************/
@@ -469,6 +529,7 @@
 .footer-nav-link:link,
 .footer-nav-link:visited {
   font-weight: 300;
+  transition: all 0.3s;
 }
 
 .footer-nav-link:hover,
@@ -563,6 +624,10 @@
 .swiper-mobile {
   display: none !important;
 }
+
+/* .swiper-slide {
+  margin: 0 !important;
+} */
 
 /******************************************************************************************************/
 /******************************************************************************************************/
@@ -780,6 +845,7 @@ label {
 /******************************************************************************************************/
 
 .section-single-product {
+  transition: none;
   margin-top: 3.2rem;
 }
 

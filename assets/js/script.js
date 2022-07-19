@@ -128,3 +128,26 @@ question.forEach((question) => {
     }
   });
 });
+
+// STICKY HEADER
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () {
+  myFunction();
+};
+
+// Get the header
+let header = document.querySelector(".header");
+let mainHeader = document.querySelector(".main-header");
+
+// Get the offset position of the navbar
+let sticky = mainHeader.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    mainHeader.classList.add("sticky");
+  } else {
+    mainHeader.classList.remove("sticky");
+  }
+}
