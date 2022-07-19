@@ -45,11 +45,12 @@
   font-size: 1.6rem;
   line-height: 2.1rem;
   color: #000000;
+  transition: all 0.2s;
 }
 
 .header__middle-nav_link:hover,
 .header__middle-nav_link:active {
-  color: rgba(0, 0, 0, 0.7);
+  color: #ca003d;
 }
 
 .header__rightside-nav_link:hover,
@@ -136,6 +137,14 @@
 
 /**********************SECTION SPEACIAL PRODUCTS****************************/
 
+.product-img {
+  transition: all 0.4s;
+}
+
+.special-product:hover .product-img {
+  transform: scale(1.1);
+}
+
 .section-special-products {
   margin-top: 2.6rem;
 }
@@ -159,6 +168,7 @@
 }
 
 .special-product {
+  cursor: pointer;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -192,7 +202,7 @@
 }
 
 .special-product__bigone .heading-tertiary {
-  margin-top: 3.2rem;
+  margin-top: 2.4rem;
 }
 
 .special-product__smallone .heading-tertiary {
@@ -266,6 +276,13 @@
 
 .new-product .special-product__price {
   margin-top: 2.4rem;
+}
+
+.sponsors-aside {
+  margin-top: 13.2rem;
+  margin-bottom: 16.8rem;
+  padding: 6.4rem 0;
+  border: 1px solid #e1e1e1;
 }
 
 /**********************END****************************/
@@ -418,6 +435,14 @@
   gap: 2.4rem;
 }
 
+.social:hover svg path {
+  fill: #ca003d;
+}
+
+.social:hover {
+  transform: translateY(-3px);
+}
+
 .footer-nav {
   gap: 2.4rem;
 }
@@ -431,7 +456,8 @@
 }
 
 .footer-nav-heading,
-.footer-nav-link {
+.footer-nav-link:link,
+.footer-nav-link:visited {
   font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
@@ -440,8 +466,14 @@
   color: #000000;
 }
 
-.footer-nav-link {
+.footer-nav-link:link,
+.footer-nav-link:visited {
   font-weight: 300;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:active {
+  color: #ca003d;
 }
 
 .footer-bottom {
@@ -696,13 +728,22 @@ label {
 }
 
 .product-img-box {
+  cursor: pointer;
   height: 255px;
+}
+
+.product-img-box:hover img {
+  transform: scale(1.1);
 }
 
 .product__title,
 .product__price {
   font-weight: 400;
   color: #000000;
+}
+
+.sale-price {
+  color: #ca003d;
 }
 
 .pagination-box {
@@ -916,9 +957,14 @@ label {
 }
 
 .similar-product {
+  cursor: pointer;
   padding: 3.2rem 2.4rem;
   gap: 2.2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.similar-product:hover .similar-product__img {
+  transform: scale(1.1);
 }
 
 .similar-product:not(:last-child) {
