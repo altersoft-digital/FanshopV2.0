@@ -679,8 +679,13 @@ label {
   padding: 8px;
 }
 
+.product-archive__products {
+  border-left: 1px solid #e1e1e1;
+}
+
 .product-archive__product {
   border: 1px solid #e1e1e1;
+  border-left: none;
   padding: 2.4rem;
   gap: 2.4rem;
 }
