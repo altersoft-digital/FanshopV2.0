@@ -367,6 +367,10 @@
   /* border-bottom: none; */
 }
 
+.new-product:not(:last-child) {
+  border-right: none;
+}
+
 .new-product .img {
   max-width: 283.79px;
 }

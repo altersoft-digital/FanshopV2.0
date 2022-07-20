@@ -35,17 +35,17 @@ var swiper = new Swiper(".swiper-new-colection", {
     // when window width is >= 0px
     0: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
     // when window width is >= 480px
     680: {
       slidesPerView: 2,
-      spaceBetween: 30,
+      spaceBetween: 0,
     },
     // when window width is >= 640px
     1040: {
       slidesPerView: 3,
-      spaceBetween: 40,
+      spaceBetween: 0,
     },
   },
 });
