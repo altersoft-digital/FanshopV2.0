@@ -1,4 +1,13 @@
 /**************************/
+/* BELOW 1568px (Some issues) */
+/**************************/
+@media (max-width: 98em) {
+  .filter-box__ul {
+    padding-left: 3.2rem;
+  }
+}
+
+/**************************/
 /* BELOW 1200px (Landscape Tablets) */
 /**************************/
 
@@ -14,6 +23,36 @@
 
   .did-youknow__left-side {
     padding: 2.9rem 0 4.1rem 3.3rem;
+  }
+
+  .product-archive__filters-box {
+    gap: 0;
+  }
+
+  .filter-box__ul {
+    border-right: none;
+  }
+
+  .filter-box__ul:not(:last-child) {
+    border-bottom: none;
+  }
+
+  .product-archive__content {
+    column-gap: 0;
+    margin: 0;
+  }
+
+  .product-archive__products-content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .product-archive__product .img {
+    max-width: 219px;
+  }
+
+  .product__title,
+  .product__price {
+    max-width: 21.433rem;
   }
 }
 

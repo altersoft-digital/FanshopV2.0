@@ -37,14 +37,38 @@
         <nav class="header__nav flex align-center space-between">
           <ul class="header__middle-nav_ul flex align-center">
             <li class="header__middle-nav_list"><a href="index.html" class="header__middle-nav_link">Home</a></li>
-            <li class="header__middle-nav_list flex align-center">
-              <a href="home.html" class="header__middle-nav_link ">GNT Kit</a>
-              <img src="./assets/img/downarrow.svg" alt="Down arrow icon" />
+            <li class="header__middle-nav_list link-than-will-drop-down">
+              <a href="home.html" class="header__middle-nav_link flex align-center">GNT Kit  <img src="./assets/img/downarrow.svg" alt="Down arrow icon" /></a>
+              <div class="nav-header__dropdown">
+                <ul class="nav-header__dropdown-box">
+                    <li>
+                        <a href="#" class="header__middle-nav_link">კოლექცია 2022</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__middle-nav_link">კოლექცია 2021</a>
+                    </li>
+                </ul>
+              </div>
             </li>
-            <li class="header__middle-nav_list flex align-center">
-              <a href="#" class="header__middle-nav_link">Clothes</a>
-              <img src="./assets/img/downarrow.svg" alt="Down arrow icon" />
-            </li class="header__middle-nav_list">
+            <li class="header__middle-nav_list link-than-will-drop-down">
+              <a href="#" class="header__middle-nav_link flex align-center">Clothes <img src="./assets/img/downarrow.svg" alt="Down arrow icon" /></a>
+              <div class="nav-header__dropdown">
+                <ul class="nav-header__dropdown-box">
+                    <li>
+                        <a href="#" class="header__middle-nav_link">მაისურები</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__middle-nav_link">კეპები</a>
+                    </li>
+                    <li>
+                      <a href="#" class="header__middle-nav_link">ჰუდები</a>
+                  </li>
+                  <li>
+                      <a href="#" class="header__middle-nav_link">ჩანთები</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
             <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Gifts</a></li>
             <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Sales</a></li>
           </ul>
@@ -154,7 +178,9 @@
     <div class="container">
       <div class="section-special-products__content grid grid--4-cols parent-border">
         <div class="special-product special-product__bigone">
+          <div class="product-img-box__big">
           <img src="assets/img/product-1.png" alt="product image" class="img product-img" >
+        </div>
           <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
           <p class="sub-heading center-text">სამეურნეო მდგომარეობა და ხალხთა შორის კულტურულ-ისტორიული კავშირი. </p>
           <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
@@ -163,26 +189,36 @@
         </div>
   
         <div class="special-product special-product__smallone">
+          <div class="product-img-box__small">
           <img src="assets/img/product-3.png" alt="product image" class="img product-img">
+          </div>
           <h3 class="heading-tertiary center-text special-product__title product__title">წითელი ფან მაისური ანიმაციით 2022 </h3>
           <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
           <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
         </div>
         
         <div class="special-product special-product__smallone">
+          <div class="product-img-box__small">
           <img src="assets/img/product-4.png" alt="product image" class="img product-img">
+          </div>
+
           <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
           <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
           <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
         </div>
         <div class="special-product special-product__smallone">
+          <div class="product-img-box__small">
           <img src="assets/img/kepiRed.png" alt="product image" class="img product-img">
+          </div>
+
           <h3 class="heading-tertiary center-text special-product__title product__title">წითელი კეპი ეროვნული ნაკრების ლოგოთი 2022  </h3>
           <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
           <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
         </div>
         <div class="special-product special-product__smallone">
+          <div class="product-img-box__small">
           <img src="assets/img/kepiRed.png" alt="product image" class="img product-img">
+          </div>
           <h3 class="heading-tertiary center-text special-product__title product__title">წითელი კეპი ეროვნული ნაკრების ლოგოთი 2022  </h3>
           <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
           <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
@@ -314,7 +350,8 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="footer-content container grid space-between ">
+      <div class="footer-content-box out-container">
+      <div class="footer-content tablet-margins grid space-between ">
         <div class="footer-1">
           <h4 class="footer-1__heading">გამოიწერე სიახლეები</h4>
           <form action="#" class="footer-1__form grid">
@@ -433,6 +470,7 @@
         </div>
       </div>
       </div>
+    </div>
       <div class="footer-bottom">
         <p class="copyright-p center-text">Ⓒ საქართველოს ფეხბურთის ფედერაცია <span class="year">2022</span> - ყველა უფლება დაცულია.</p>
       </div>

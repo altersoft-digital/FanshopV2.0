@@ -28,8 +28,9 @@
   </head>
   <body>
     <main class="main-header long-container">
-      <header class="header">
-        <div class="header-box container">
+      <header class="header ">
+        <div class="out-container">
+        <div class="header-box tablet-margins">
         <div class="logo-box">
           <img src="./assets/img/gfflogo.svg" alt="logo" />
           <img src="./assets/img/logoText.svg" alt="logoname" />
@@ -78,6 +79,7 @@
           </ul>
         </nav>
       </div>
+    </div>
       </header>
       <header class="header-mobile flex align-center space-between">
         <div class="header-mobile__left-side flex align-center">
@@ -112,14 +114,14 @@
     </div>
       
     </main>
-      <section class="section-product-archive container grid after-header">
-        <header class="product-archive__header flex flex-align-center space-between">
+      <section class="section-product-archive out-container grid after-header">
+        <header class="product-archive__header flex flex-align-center space-between tablet-margins">
           <div class="product-archive__header-left flex align-center space-between">
             <div class="location-box flex align-center">
               <a href="index.html" class="header__middle-nav_link">Home</a>
-              <img src="assets/img/downarrow.svg" alt="arrow icon" class="right-arrow">
+              <img src="assets/img/small-arrow.svg" alt="arrow icon" class="right-arrow">
               <a href="index.html" class="header__middle-nav_link">Shop</a>
-              <img src="assets/img/downarrow.svg" alt="arrow icon" class="right-arrow">
+              <img src="assets/img/small-arrow.svg" alt="arrow icon" class="right-arrow">
               <a href="index.html" class="header__middle-nav_link">GNT Kit</a>
             </div>
             <div class="active-filters-box flex flex-align-center space-between">
@@ -145,7 +147,7 @@
               </select>
             </form>
         </header>
-        
+        <div class="container grid product-archive__content">
         <div class="product-archive__filters-box flex flex-column">
 
           <ul class="filter-box__ul flex flex-column">
@@ -160,20 +162,29 @@
             <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading">Accesories</a></li>
             <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading">Sale</a></li>
           </ul>
-          <ul class="filter-box__ul flex flex-column">
-            <h3 class="heading-tertiary">Size</h3>
+          <ul class="filter-box__ul grid">
+            <div class="drop-down__before-box flex align-center space-between">
+              <h4 class="heading-tertiary">Size</h4>
+              <img src="./assets/img/downarrow.svg" alt="down arrow" class="footer-down-arrow">
+            </div>
+            
+            <div class="flex flex-column drop-down__hidden-box">
+              <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading active">XS</a></li>
+              <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading">S</a></li>
+              <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading">M</a></li>
+              <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading">L</a></li>
+              <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading">XL</a></li>
+            </div>
             <div class="section-special-products__header-border"></div>
-            <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading active">XS</a></li>
-            <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading">S</a></li>
-            <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading">M</a></li>
-            <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading">L</a></li>
-            <li class="filter-box__list"><a href="#" class="filter-box__link sub-heading">XL</a></li>
           </ul>
 
-          <div class="filter-box__ul flex flex-column">
-            <h3 class="heading-tertiary">Color</h3>
-            <div class="section-special-products__header-border"></div>
-            <div class="filter-by-color grid grid--4-cols">
+          <div class="filter-box__ul grid">
+            <div class="drop-down__before-box flex align-center space-between">
+              <h4 class="heading-tertiary">Color</h4>
+              <img src="./assets/img/downarrow.svg" alt="down arrow" class="footer-down-arrow">
+            </div>
+            
+            <div class="filter-by-color flex flex-wrap drop-down__hidden-box">
               <a href="#" class="filter-box__color-link color-red"></a>
               <a href="#" class="filter-box__color-link color-blue"></a>
               <a href="#" class="filter-box__color-link color-green"></a>
@@ -182,9 +193,11 @@
               <a href="#" class="filter-box__color-link color-black"></a>
               <a href="#" class="filter-box__color-link color-white"></a>
             </div>
+            <div class="section-special-products__header-border"></div>
           </div>
         </div>
-        <div class="product-archive__products grid grid--4-cols">
+        <div class="product-archive__products grid">
+          <div class="product-archive__products-content grid grid--4-cols">
           <div class="product-archive__product flex flex-column align-center">
             <div class="product-img-box"><img src="./assets/img/product-2.png" alt="product" class="img"> </div>
             <h3 class="sub-heading center-text product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
@@ -245,15 +258,18 @@
             <h3 class="sub-heading center-text product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
             <p class="product__price heading-tertiary center-text">50 	&#8382;</p>
           </div>
+        </div>
           <div class="pagination-box flex align-center">
               <a href="#" class="btn btn-pagination heading-tertiary active">1</a>
               <a href="#" class="btn btn-pagination heading-tertiary">2</a>
               <a href="#" class="btn btn-pagination heading-tertiary">3</a>
           </div>
         </div>
+      </div>
       </section>
       <footer class="footer">
-        <div class="footer-content container grid space-between ">
+        <div class="footer-content-box out-container">
+          <div class="footer-content tablet-margins grid space-between ">
           <div class="footer-1">
             <h4 class="footer-1__heading">გამოიწერე სიახლეები</h4>
             <form action="#" class="footer-1__form grid">
@@ -370,6 +386,7 @@
                 </svg>
             </a>
           </div>
+        </div>
         </div>
         </div>
         <div class="footer-bottom">
