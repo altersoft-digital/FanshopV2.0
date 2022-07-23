@@ -240,6 +240,10 @@
   .btn-proceed-to-checkout {
     padding: 2rem;
   }
+
+  .payment-methods {
+    gap: 2.2rem;
+  }
 }
 
 /**************************/
@@ -388,6 +392,17 @@
   .wishlist-page .section-cart-item__right {
     margin-top: 2rem;
     flex-direction: row;
+  }
+
+  /* checkout */
+
+  .section-checkout {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .checkbox-terms-conditions {
+    padding-left: 2.4rem;
   }
 }
 

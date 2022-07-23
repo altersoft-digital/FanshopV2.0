@@ -1247,7 +1247,8 @@ label {
 }
 
 .total-items-amount {
-  columns: #000000;
+  font-weight: 700;
+  color: #000000;
 }
 
 .btn-proceed-to-checkout {
@@ -1386,4 +1387,82 @@ label {
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
   max-width: 297px;
+}
+
+/* Checkout page styles */
+
+.section-checkout {
+  margin-top: 3.2rem;
+  margin-bottom: 10.6rem;
+  grid-template-columns: minmax(0, 1fr) 2fr;
+  gap: 2rem;
+}
+
+.section-checkout .heading-tertiary {
+  font-weight: 400;
+}
+
+.promotional-code-box label {
+  font-weight: 300;
+}
+
+.redeem-code-input {
+  margin-top: 8px;
+  background: none;
+  padding: 2rem;
+  border: 1px solid #e1e1e1;
+}
+
+.checkbox-terms-conditions {
+  gap: 8px;
+}
+
+.checkout-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #e1e1e1;
+  background: none;
+}
+
+.checkbox-terms-conditions label {
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-terms-conditions:link,
+.btn-terms-conditions:visited {
+  padding: 0;
+  color: #0075ca;
+  transition: all 0.2s;
+}
+
+.btn-terms-conditions:hover,
+.btn-terms-conditions:active {
+  transform: translateY(-2px);
+  color: rgba(0, 118, 202, 0.801);
+}
+
+.payment-methods {
+  gap: 3.2rem;
+}
+
+.checkout__right {
+  gap: 2rem;
+}
+
+.checkout__right input,
+.checkout__right textarea {
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  padding: 2.4rem;
+  font-family: "Kashia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.checkout__right textarea {
+  grid-column: span 2;
 }
