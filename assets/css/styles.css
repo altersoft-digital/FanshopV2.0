@@ -142,12 +142,17 @@
   height: 83px;
 }
 
-.after-header {
+.after-header,
+.section-transaction {
   transition: none;
 }
 
 .sticky + .after-header {
   margin-top: 9.8rem;
+}
+
+.sticky + .section-transaction {
+  margin-top: 23.2rem;
 }
 
 .sticky + .section-single-product {
@@ -1225,6 +1230,10 @@ label {
   gap: 2.4rem;
 }
 
+.wishlist-page .shopping-cart-info {
+  background: #fff;
+}
+
 .shopping-cart__heading {
   gap: 1.6rem;
 }
@@ -1326,12 +1335,55 @@ label {
 
 .btn-remove:link,
 .btn-remove:visited {
-  font-style: italic;
+  /* font-style: italic; */
   padding: 0;
   color: #ca003d;
 }
 
 .btn-remove:hover,
 .btn-remove:active {
-  transform: scale(1.1);
+  transform: translateY(-2px);
+}
+
+.btn-wishlist:link,
+.btn-wishlist:visited {
+  padding: 0;
+  color: #008fff;
+  transition: all 0.2s;
+}
+
+.btn-wishlist:hover,
+.btn-wishlist:active {
+  transform: translateY(-2px);
+}
+
+.section-transaction {
+  margin-top: 15.2rem;
+  margin-bottom: 31rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.transaction-box {
+  text-align: center;
+}
+
+.heading-transaction {
+  margin-top: 6.4rem;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  color: #000000;
+}
+
+.transaction-text {
+  margin-top: 2.1rem;
+  margin-bottom: 6.4rem;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 297px;
 }

@@ -384,6 +384,11 @@
   .section-cart-item__right {
     gap: 2rem;
   }
+
+  .wishlist-page .section-cart-item__right {
+    margin-top: 2rem;
+    flex-direction: row;
+  }
 }
 
 /**************************/
