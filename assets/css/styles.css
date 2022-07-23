@@ -159,6 +159,10 @@
   margin-top: 11.4rem;
 }
 
+.sticky + .section-welcome {
+  margin-top: 29.2rem;
+}
+
 .sticky .after-header {
   margin-top: 9.1rem;
 }
@@ -1417,7 +1421,7 @@ label {
   gap: 8px;
 }
 
-.checkout-checkbox {
+input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border: 1px solid #e1e1e1;
@@ -1451,13 +1455,14 @@ label {
 }
 
 .checkout__right input,
-.checkout__right textarea {
+.checkout__right textarea,
+.welcome-form input {
   background: #ffffff;
   border: 1px solid #e1e1e1;
   padding: 2.4rem;
   font-family: "Kashia";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.1rem;
   color: rgba(0, 0, 0, 0.5);
@@ -1465,4 +1470,56 @@ label {
 
 .checkout__right textarea {
   grid-column: span 2;
+}
+
+/* Welcome */
+
+.section-welcome {
+  margin-top: 23.3rem;
+  margin-bottom: 36.2rem;
+  transition: none;
+}
+
+.section-welcome-box {
+  width: 100%;
+  padding: 2.4rem;
+  max-width: 403px;
+  gap: 2.4rem;
+}
+
+.section-welcome-box .btn-primary {
+  width: 100%;
+}
+
+.welcome-heading {
+  text-align: center;
+  font-weight: 400;
+}
+
+.welcome-form {
+  width: 100%;
+  gap: 2.4rem;
+}
+
+.welcome-form input {
+  padding: 10px;
+  width: 100%;
+}
+
+.welcome-sub {
+  font-weight: 300;
+  text-align: center;
+  color: #000000;
+}
+
+.btn-register:link,
+.btn-register:visited {
+  font-weight: 300;
+  padding: 0;
+  color: #0075ca;
+}
+
+.btn-register:hover,
+.btn-register:active {
+  color: rgba(0, 118, 202, 0.8);
 }
