@@ -404,6 +404,10 @@
   .checkbox-terms-conditions {
     padding-left: 2.4rem;
   }
+
+  .item-amount {
+    max-width: 100px;
+  }
 }
 
 /**************************/

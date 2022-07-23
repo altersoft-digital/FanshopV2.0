@@ -191,3 +191,23 @@ function myFunction() {
     mainHeader.classList.remove("sticky");
   }
 }
+
+// PROFILE NAV CHANGER
+
+function LetsDisplay(btn, section) {
+  const activeEls = document.querySelectorAll(".active");
+  Array.prototype.forEach.call(activeEls, (item) => {
+    if (
+      item.classList.contains("section-profile__subsec") ||
+      item.classList.contains("profile-nav-list")
+    ) {
+      item.classList.remove("active");
+    }
+  });
+  if (!document.querySelector(btn).classList.contains("active")) {
+    document.querySelector(btn).classList.add("active");
+  }
+  if (!document.querySelector(section).classList.contains("active")) {
+    document.querySelector(section).classList.add("active");
+  }
+}

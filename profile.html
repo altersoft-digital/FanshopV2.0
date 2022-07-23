@@ -138,19 +138,227 @@
       
     </main>
 
-    <section class="section-welcome flex align-center justify-center">
-      <div class="section-welcome-box flex flex-column ">
-        <h3 class="welcome-heading heading-tertiary">Register</h3>
-        <form action="#" class="welcome-form flex flex-column">
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <input type="password" placeholder="Repeat Password" />
-          <button type="submit" class="btn btn-primary">Register</button>
-        </form>
-        <p class="welcome-sub sub-heading">
-          Already have an account? <a href="login.html" class="btn btn-register">Login</a>
-        </p>
+    <section class="section-profile out-container">
+      <div class="profile-header tablet-margins">
+        <div class="profile-welcome-msg-box">
+        <h1 class="heading-profile">გამარჯობა, David 👋🏻</h1>
+        <p class="karg-dges-gisurveb">სასიამოვნო დღეს გისურვებ :)</p>
+        </div>
       </div>
+      <div class="container">
+        <nav class="profile-nav flex justify-center">
+          <ul class="profile-nav-ul flex align-center">
+            <li id="orders" class="profile-nav-list active flex flex-column space-between " onclick="LetsDisplay('#orders', '.orders-main-box')">
+              <button class="btn btn-profile-link sub-heading">Orders</button>
+              <span class="profile-nav-border"></span>
+            </li>
+            <li id="shipping" class="profile-nav-list flex flex-column space-between" onclick="LetsDisplay('#shipping', '.shipping-address-box')">
+              <button class="btn btn-profile-link sub-heading">Shipping Address</button>
+              <span class="profile-nav-border"></span>
+            </li>
+            <li id="details" class="profile-nav-list flex flex-column space-between" onclick="LetsDisplay('#details', '.account-details-box')">
+              <button class="btn btn-profile-link sub-heading">Account Details</button>
+              <span class="profile-nav-border"></span>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+      <div class="orders-main-box section-profile__subsec">
+      <table class="orders-table--mobile">
+        <tbody>
+          <tr>
+            <!-- tabel data -->
+            <td>
+              <span class="table-status-icon icon--green">
+                <img
+                  src="./img/checked-icon.svg"
+                  alt="Status Completed icon"
+                />
+              </span>
+              #7924
+            </td>
+            <td>190.00 GEL</td>
+
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <!-- tabel data -->
+            <td>
+              <span class="table-status-icon icon--yellow">
+                <img
+                  src="./img/checked-yellow.svg"
+                  alt="Status Completed icon"
+                />
+              </span>
+              #7924
+            </td>
+            <td>190.00 GEL</td>
+
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <!-- tabel data -->
+            <td>
+              <span class="table-status-icon icon--red">
+                <img
+                  src="./img/union-icon.svg"
+                  alt="Status Completed icon"
+                />
+              </span>
+              #7924
+            </td>
+            <td>190.00 GEL</td>
+
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <!-- tabel data -->
+            <td>
+              <span class="table-status-icon icon--green">
+                <img
+                  src="./img/checked-icon.svg"
+                  alt="Status Completed icon"
+                />
+              </span>
+              #7924
+            </td>
+            <td>190.00 GEL</td>
+
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <!-- tabel data -->
+            <td>
+              <span class="table-status-icon icon--green">
+                <img
+                  src="./img/checked-icon.svg"
+                  alt="Status Completed icon"
+                />
+              </span>
+              #7924
+            </td>
+            <td>190.00 GEL</td>
+
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <!-- tabel data -->
+            <td>
+              <span class="table-status-icon icon--green">
+                <img
+                  src="./img/checked-icon.svg"
+                  alt="Status Completed icon"
+                />
+              </span>
+              #7924
+            </td>
+            <td>190.00 GEL</td>
+
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <!-- tabel data -->
+            <td>
+              <span class="table-status-icon icon--green">
+                <img
+                  src="./img/checked-icon.svg"
+                  alt="Status Completed icon"
+                />
+              </span>
+              #7924
+            </td>
+            <td>190.00 GEL</td>
+
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <!-- tabel data -->
+            <td>
+              <span class="table-status-icon icon--green">
+                <img
+                  src="./img/checked-icon.svg"
+                  alt="Status Completed icon"
+                />
+              </span>
+              #7924
+            </td>
+            <td>190.00 GEL</td>
+
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="orders-table">
+        <tbody>
+          <tr >
+            <!-- tabel data -->
+            <td>#7924</td>
+            <td>November 19, 2021</td>
+            <td>190.00 ₾ for 5 items</td>
+            <td><span class="order-status--completed">Completed</span></td>
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <td>#7924</td>
+            <td>November 19, 2021</td>
+            <td>190.00 ₾ for 5 items</td>
+            <td><span class="order-status--failed">Failed</span></td>
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <td>#7924</td>
+            <td>November 19, 2021</td>
+            <td>190.00 ₾ for 5 items</td>
+            <td><span class="order-status--pending">Pending</span></td>
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <td>#7924</td>
+            <td>November 19, 2021</td>
+            <td>190.00 ₾ for 5 items</td>
+            <td><span class="order-status--completed">Completed</span></td>
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <!-- tabel data -->
+            <td>#7924</td>
+            <td>November 19, 2021</td>
+            <td>190.00 ₾ for 5 items</td>
+            <td><span class="order-status--completed">Completed</span></td>
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <td>#7924</td>
+            <td>November 19, 2021</td>
+            <td>190.00 ₾ for 5 items</td>
+            <td><span class="order-status--completed">Completed</span></td>
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <td>#7924</td>
+            <td>November 19, 2021</td>
+            <td>190.00 ₾ for 5 items</td>
+            <td><span class="order-status--completed">Completed</span></td>
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+          <tr>
+            <td>#7924</td>
+            <td>November 19, 2021</td>
+            <td>190.00 ₾ for 5 items</td>
+            <td><span class="order-status--completed">Completed</span></td>
+            <td><a href="#" class="btn btn-view-order">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="shipping-address-box section-profile__subsec">
+      Shipping address
+    </div>
+    <div class="account-details-box section-profile__subsec">
+      Account details
+    </div>
+  </div>
     </section>
 
 
