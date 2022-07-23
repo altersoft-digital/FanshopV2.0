@@ -50,6 +50,19 @@ var swiper = new Swiper(".swiper-new-colection", {
   },
 });
 
+// Swiper Single Product Mobile
+var swiper = new Swiper(".swiper-mobile-single", {
+  slidesPerView: 1,
+  // centeredSlides: true,
+  // freeMode: true,
+  // grabCursor: true,
+  loop: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 // Swiper Advertisement
 var swiper = new Swiper(".swiper-advertisement", {
   slidesPerView: 1,
@@ -108,6 +121,33 @@ btnNavEl.addEventListener("click", function () {
   }
 });
 
+///////////////////////////////////////////////////////////
+// Make mobile filter work
+
+const btnFilterEl = document.querySelector(".btn-filter-icon");
+const archiveEl = document.querySelector(".section-product-archive");
+const mobileFilterEl = document.querySelector(".filter-box__mobile");
+if (btnFilterEl) {
+  btnFilterEl.addEventListener("click", function () {
+    if (archiveEl.classList.contains("filter-open")) {
+      mobileFilterEl.classList.add("close-filter-animation");
+      setTimeout(function () {
+        archiveEl.classList.toggle("filter-open");
+      }, 200);
+      setTimeout(function () {
+        mobileFilterEl.classList.remove("close-filter-animation");
+      }, 800);
+    } else {
+      mobileFilterEl.classList.add("open-filter-animation");
+      setTimeout(function () {
+        archiveEl.classList.toggle("filter-open");
+      }, 200);
+      setTimeout(function () {
+        mobileFilterEl.classList.remove("open-filter-animation");
+      }, 800);
+    }
+  });
+}
 // scroll
 
 let question = document.querySelectorAll(".drop-down__before-box");

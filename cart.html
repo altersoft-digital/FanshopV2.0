@@ -28,7 +28,9 @@
   </head>
   <body>
     <main class="main-header long-container">
-      <header class="header header-paddings header-box">
+      <header class="header ">
+        <div class="out-container">
+        <div class="header-box tablet-margins">
         <div class="logo-box">
           <img src="./assets/img/gfflogo.svg" alt="logo" />
           <img src="./assets/img/logoText.svg" alt="logoname" />
@@ -68,7 +70,6 @@
                   </li>
                 </ul>
               </div>
-            </li>
             <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Gifts</a></li>
             <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Sales</a></li>
           </ul>
@@ -100,6 +101,8 @@
             </li>
           </ul>
         </nav>
+      </div>
+    </div>
       </header>
       <header class="header-mobile flex align-center space-between">
         <div class="header-mobile__left-side flex align-center">
@@ -132,230 +135,123 @@
         </ul>
       </nav>
     </div>
-      <div class="swiper swiper-header-posters swiper-not-mobile after-header after-header-mobile">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide ">
-            <img src="assets/img/main-header-img.png" alt="Poster image" class="main-header__poster">
-          </div>
-          <div class="swiper-slide ">
-            <img src="assets/img/main-header-img.png" alt="Poster image" class="main-header__poster">
-          </div>
-          <div class="swiper-slide ">
-            <img src="assets/img/main-header-img.png" alt="Poster image" class="main-header__poster">
-          </div>
-          <div class="swiper-slide ">
-            <img src="assets/img/main-header-img.png" alt="Poster image" class="main-header__poster">
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="swiper swiper-header-posters swiper-mobile">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide ">
-            <img src="assets/img/kvara.png" alt="Poster image" class="main-header__poster">
-          </div>
-          <div class="swiper-slide ">
-            <img src="assets/img/mamarda.png" alt="Poster image" class="main-header__poster">
-          </div>
-          <div class="swiper-slide ">
-            <img src="assets/img/mamardamere.png" alt="Poster image" class="main-header__poster">
-          </div>
-          <div class="swiper-slide ">
-            <img src="assets/img/kashia.png" alt="Poster image" class="main-header__poster">
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
+      
     </main>
-    <section class="section-special-products">
-      <div class="out-container">
-      <header class="section-special-products__header tablet-margins">
-        <h2 class="heading-secondary">გამორჩეული პროდუქცია</h2>
-        <div class="section-special-products__header-border horizontal-border"></div>
-        <a href="#" class="btn btn-primary metis-naxva">მეტის ნახვა</a>
-      </header>
-    </div>
-    <div class="container">
-      <div class="section-special-products__content grid grid--4-cols parent-border">
-        <div class="special-product special-product__bigone">
-          <div class="product-img-box__big">
-          <img src="assets/img/product-1.png" alt="product image" class="img product-img" >
+
+    <section class="section-cart after-header container">
+      <div class="section-cart__left">
+        <div class="shopping-cart-info flex flex-column">
+          <div class="shopping-cart__heading flex align-center"><img src="assets/img/cartIcon.svg" alt="cart"><h3 class="heading-tertiary">Shopping Cart</h3></div>
+          <div class="section-special-products__header-border horizontal-border"></div>
+          <p class="promotional-code-text sub-heading">Have a Promotional Code? Proceed to checkout to redeem it.</p>
+          <div class="section-special-products__header-border horizontal-border"></div>
+          <p class="total-items sub-heading">Items: <span class="total-items-amount sub-heading">4</span></p>
+          <p class="total-items sub-heading">Total Price: <span class="total-items-amount sub-heading">580 GEL</span></p>
+          <button class="btn btn-primary btn-proceed-to-checkout flex align-center space-between">Proceed to checkout<svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6228 0.742422C10.3856 0.44593 9.95293 0.397859 9.65643 0.635053L5.50258 3.95814L1.34872 0.635053C1.05223 0.397859 0.619592 0.445929 0.382398 0.742422C0.145204 1.03891 0.193274 1.47155 0.489767 1.70875L5.0731 5.37541C5.32419 5.57628 5.68097 5.57628 5.93206 5.37541L10.5154 1.70875C10.8119 1.47155 10.86 1.03891 10.6228 0.742422Z" fill="black"/>
+            </svg>
+            </button>
         </div>
-          <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
-          <p class="sub-heading center-text">სამეურნეო მდგომარეობა და ხალხთა შორის კულტურულ-ისტორიული კავშირი. </p>
-          <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
-          <div class="special-product__heart"><img src="assets/img/activeheart.svg" alt="active heart icon">
+        <p class="read-privacy sub-heading">Read <a href="#" class="btn">Privacy Policy</a></p>
+      </div>
+      <div class="section-cart__right flex flex-column">
+        <div class="cart-item flex align-center space-between">
+          <div class="cart-item__left flex">
+            <img src="./assets/img/hoodie.png" alt="product" class="img">
+            <div class="cart-item-details flex flex-column">
+              <h3 class="heading-tertiary">National Team Hoodie 12 Number</h3>
+              <p class="status sub-heading">In Stock</p>
+              <p class="item-size sub-heading">Size: M</p>
+              <p class="item-color sub-heading">Color: Black</p>
+            </div>
+          </div>
+          <div class="section-cart-item__right flex flex-column">
+              <p class="item-price sub-heading">Price: 145 GEL</p>
+              <select name="amount" id="" class="item-amount sub-heading">
+                <option value="1">1 Item</option>
+                <option value="2">2 Item</option>
+                <option value="3">3 Item</option>
+                <option value="4">4 Item</option>
+                <option value="5">5 Item</option>
+              </select>
+              <a href="#" class="btn btn-remove">Remove</a>
           </div>
         </div>
-  
-        <div class="special-product special-product__smallone">
-          <div class="product-img-box__small">
-          <img src="assets/img/product-3.png" alt="product image" class="img product-img">
+        <div class="cart-item flex align-center space-between">
+          <div class="cart-item__left flex">
+            <img src="./assets/img/hoodie.png" alt="product" class="img">
+            <div class="cart-item-details flex flex-column">
+              <h3 class="heading-tertiary">National Team Hoodie 12 Number</h3>
+              <p class="status sub-heading">In Stock</p>
+              <p class="item-size sub-heading">Size: M</p>
+              <p class="item-color sub-heading">Color: Black</p>
+            </div>
           </div>
-          <h3 class="heading-tertiary center-text special-product__title product__title">წითელი ფან მაისური ანიმაციით 2022 </h3>
-          <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
-          <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
+          <div class="section-cart-item__right flex flex-column">
+              <p class="item-price sub-heading">Price: 145 GEL</p>
+              <select name="amount" id="" class="item-amount sub-heading">
+                <option value="1">1 Item</option>
+                <option value="2">2 Item</option>
+                <option value="3">3 Item</option>
+                <option value="4">4 Item</option>
+                <option value="5">5 Item</option>
+              </select>
+              <a href="#" class="btn btn-remove">Remove</a>
+          </div>
         </div>
+        <div class="cart-item flex align-center space-between">
+          <div class="cart-item__left flex">
+            <img src="./assets/img/hoodie.png" alt="product" class="img">
+            <div class="cart-item-details flex flex-column">
+              <h3 class="heading-tertiary">National Team Hoodie 12 Number</h3>
+              <p class="status sub-heading">In Stock</p>
+              <p class="item-size sub-heading">Size: M</p>
+              <p class="item-color sub-heading">Color: Black</p>
+            </div>
+          </div>
+          <div class="section-cart-item__right flex flex-column">
+              <p class="item-price sub-heading">Price: 145 GEL</p>
+              <select name="amount" id="" class="item-amount sub-heading">
+                <option value="1">1 Item</option>
+                <option value="2">2 Item</option>
+                <option value="3">3 Item</option>
+                <option value="4">4 Item</option>
+                <option value="5">5 Item</option>
+              </select>
+              <a href="#" class="btn btn-remove">Remove</a>
+          </div>
+        </div>
+        <div class="cart-item flex align-center space-between">
+          <div class="cart-item__left flex">
+            <img src="./assets/img/hoodie.png" alt="product" class="img">
+            <div class="cart-item-details flex flex-column">
+              <h3 class="heading-tertiary">National Team Hoodie 12 Number</h3>
+              <p class="status sub-heading">In Stock</p>
+              <p class="item-size sub-heading">Size: M</p>
+              <p class="item-color sub-heading">Color: Black</p>
+            </div>
+          </div>
+          <div class="section-cart-item__right flex flex-column">
+              <p class="item-price sub-heading">Price: 145 GEL</p>
+              <select name="amount" id="" class="item-amount sub-heading">
+                <option value="1">1 Item</option>
+                <option value="2">2 Item</option>
+                <option value="3">3 Item</option>
+                <option value="4">4 Item</option>
+                <option value="5">5 Item</option>
+              </select>
+              <a href="#" class="btn btn-remove">Remove</a>
+          </div>
+        </div>
+      
         
-        <div class="special-product special-product__smallone">
-          <div class="product-img-box__small">
-          <img src="assets/img/product-4.png" alt="product image" class="img product-img">
-          </div>
-
-          <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
-          <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
-          <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-        </div>
-        <div class="special-product special-product__smallone">
-          <div class="product-img-box__small">
-          <img src="assets/img/kepiRed.png" alt="product image" class="img product-img">
-          </div>
-
-          <h3 class="heading-tertiary center-text special-product__title product__title">წითელი კეპი ეროვნული ნაკრების ლოგოთი 2022  </h3>
-          <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
-          <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-        </div>
-        <div class="special-product special-product__smallone">
-          <div class="product-img-box__small">
-          <img src="assets/img/kepiRed.png" alt="product image" class="img product-img">
-          </div>
-          <h3 class="heading-tertiary center-text special-product__title product__title">წითელი კეპი ეროვნული ნაკრების ლოგოთი 2022  </h3>
-          <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
-          <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-        </div>
-      </div>
-      <a href="#" class="btn btn-primary metis-naxva metis-naxva-mobile">მეტის ნახვა</a>
-    </div>
-    </section>
-    <aside class="advertisement swiper swiper-advertisement container advertisement-not-mobile">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="assets/img/nakrebige.png" alt="advertisement" class="img"></div>
-        <div class="swiper-slide"><img src="assets/img/mevarsaqartvelo.png" alt="advertisement" class="img"></div>
-        <div class="swiper-slide"><img src="assets/img/mevarsaqartvelored.png" alt="advertisement" class="img"></div>
-      </div>
-    </aside>
-    <aside class="advertisement swiper swiper-advertisement container advertisement-mobile">
-      <div class=""><img src="assets/img/mevarsaqartvelo-mobile.png" alt="advertisement" class="img"></div>
-    </aside>
-
-    <section class="section-new-collection">
-      <div class="out-container">
-      <header class="section-special-products__header tablet-margins">
-        <h2 class="heading-secondary">ახალი კოლექცია</h2>
-        <div class="section-special-products__header-border horizontal-border"></div>
-        <a href="#" class="btn btn-primary metis-naxva">მეტის ნახვა</a>
-      </header>
-    </div>
-    <div class="container">
-      <div class="swiper swiper-new-colection">
-        <div class="swiper-wrapper">
-        
-          <div class="swiper-slide special-product new-product">
-            <img src="assets/img/product-1.png" alt="product image" class="img product-img">
-            <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
-            <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
-            <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-          </div>
-          <div class="swiper-slide special-product new-product">
-            <img src="assets/img/product-1.png" alt="product image" class="img product-img">
-            <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
-            <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
-            <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-          </div>
-          <div class="swiper-slide special-product new-product">
-            <img src="assets/img/product-1.png" alt="product image" class="img product-img">
-            <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
-            <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
-            <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-          </div>
-          <div class="swiper-slide special-product new-product">
-            <img src="assets/img/product-1.png" alt="product image" class="img product-img">
-            <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
-            <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
-            <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-          </div>
-          <div class="swiper-slide special-product new-product">
-            <img src="assets/img/product-1.png" alt="product image" class="img product-img">
-            <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
-            <p class="special-product__price heading-tertiary center-text">50 	&#8382;</p>
-            <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-          </div>
-      </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <a href="#" class="btn btn-primary metis-naxva metis-naxva-mobile">მეტის ნახვა</a>
-    </div>
-    </section>
-    <!-- <aside class="advertisement swiper swiper-advertisement container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide advertisement-not-mobile"><img src="assets/img/nakrebige.png" alt="advertisement" class="img"></div>
-        <div class="swiper-slide advertisement-not-mobile"><img src="assets/img/mevarsaqartvelo.png" alt="advertisement" class="img"></div>
-        <div class="swiper-slide advertisement-not-mobile"><img src="assets/img/mevarsaqartvelored.png" alt="advertisement" class="img"></div>
-        <div class="swiper-slide advertisement-mobile"><img src="assets/img/mevarsaqartvelo-mobile.png" alt="advertisement" class="img"></div>
-      </div>
-    </aside> -->
-    <aside class="sponsors-aside container flex align-center space-around flex-wrap">
-      <img src="assets/img/logo BOG white 1.png" alt="BOG" class="img">
-      <img src="assets/img/macron.png" alt="macron" class="img cola">
-      <img src="assets/img/cocacola.png" alt="cola" class="img cola">
-    </aside>
-    <section class="section-sale">
-      <div class="out-container">
-      <header class="section-special-products__header tablet-margins">
-        <h2 class="heading-secondary secondary__red">20% ფასდაკლება</h2>
-        <div class="section-special-products__header-border horizontal-border"></div>
-        <a href="#" class="btn btn-primary metis-naxva">მეტის ნახვა</a>
-      </header>
-    </div>
-      <div class="container">
-      <div class="section-sale__content grid grid--4-cols parent-border">
-          <div class="special-product sale-product">
-            <img src="assets/img/product-1.png" alt="product image" class="img product-img">
-            <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
-            <p class="special-product__price heading-tertiary center-text"><span class="sale__old-price">50&#8382;</span>50 	&#8382;</p>
-            <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-          </div>
-          <div class="special-product sale-product">
-            <img src="assets/img/product-1.png" alt="product image" class="img product-img">
-            <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
-            <p class="special-product__price heading-tertiary center-text"><span class="sale__old-price">50&#8382;</span>50 	&#8382;</p>
-            <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-          </div>
-          <div class="special-product sale-product">
-            <img src="assets/img/product-1.png" alt="product image" class="img product-img">
-            <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
-            <p class="special-product__price heading-tertiary center-text"><span class="sale__old-price">50&#8382;</span>50 	&#8382;</p>
-            <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-          </div>
-          <div class="special-product sale-product">
-            <img src="assets/img/product-1.png" alt="product image" class="img product-img">
-            <h3 class="heading-tertiary center-text special-product__title product__title">თეთრი ფან მაისური ანიმაციით 2022 </h3>
-            <p class="special-product__price heading-tertiary center-text"><span class="sale__old-price">50&#8382;</span> 50 	&#8382;</p>
-            <div class="special-product__heart"><img src="assets/img/heart.svg" alt=""></div>
-          </div>
-      </div>
-      <a href="#" class="btn btn-primary metis-naxva metis-naxva-mobile">მეტის ნახვა</a>
-    </div>
-    </section>
-    <section class="section-did-you-know container grid grid--2-cols space-between swiper-not-mobile">
-      <div class="did-youknow__left-side">
-        <div class="did-youknow__left-side-content">
-
-        <p class="did-youknow__heading italic">იცოდი?</p>
-        <p class="sub-heading italic">
-          შეგიძლია თვალი ადევნო ეროვნული ნაკრების ყოველდღიურ სიახლეებს Nakrebi.ge-ზე?
-        </p>
-        <h3 ><a href="http://nakrebi.ge" class="heading-tertiary italic flex align-center">ვებ გვერდის სანახავად დააჭირე აქ <img src="assets/img/downarrow.svg" alt="arrow icon" class="right-arrow"></a></h3>
-      </div>
-
-      </div>
-      <div class="did-youknow__right-side">
-        <img src="assets/img/nakrebigeweb.png" alt="poster" class="img">
       </div>
     </section>
+
+
     <footer class="footer">
       <div class="footer-content-box out-container">
-      <div class="footer-content tablet-margins grid space-between ">
+        <div class="footer-content tablet-margins grid space-between ">
         <div class="footer-1">
           <h4 class="footer-1__heading">გამოიწერე სიახლეები</h4>
           <form action="#" class="footer-1__form grid">
@@ -474,7 +370,7 @@
         </div>
       </div>
       </div>
-    </div>
+      </div>
       <div class="footer-bottom">
         <p class="copyright-p center-text">Ⓒ საქართველოს ფეხბურთის ფედერაცია <span class="year">2022</span> - ყველა უფლება დაცულია.</p>
       </div>

@@ -28,8 +28,9 @@
   </head>
   <body>
     <main class="main-header long-container">
-      <header class="header">
-        <div class="header-box container">
+      <header class="header ">
+        <div class="out-container">
+        <div class="header-box tablet-margins">
         <div class="logo-box">
           <img src="./assets/img/gfflogo.svg" alt="logo" />
           <img src="./assets/img/logoText.svg" alt="logoname" />
@@ -38,14 +39,37 @@
         <nav class="header__nav flex align-center space-between">
           <ul class="header__middle-nav_ul flex align-center">
             <li class="header__middle-nav_list"><a href="index.html" class="header__middle-nav_link">Home</a></li>
-            <li class="header__middle-nav_list flex align-center">
-              <a href="home.html" class="header__middle-nav_link ">GNT Kit</a>
-              <img src="./assets/img/downarrow.svg" alt="Down arrow icon" />
+            <li class="header__middle-nav_list link-than-will-drop-down">
+              <a href="home.html" class="header__middle-nav_link flex align-center">GNT Kit  <img src="./assets/img/downarrow.svg" alt="Down arrow icon" /></a>
+              <div class="nav-header__dropdown">
+                <ul class="nav-header__dropdown-box">
+                    <li>
+                        <a href="#" class="header__middle-nav_link">კოლექცია 2022</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__middle-nav_link">კოლექცია 2021</a>
+                    </li>
+                </ul>
+              </div>
             </li>
-            <li class="header__middle-nav_list flex align-center">
-              <a href="#" class="header__middle-nav_link">Clothes</a>
-              <img src="./assets/img/downarrow.svg" alt="Down arrow icon" />
-            </li class="header__middle-nav_list">
+            <li class="header__middle-nav_list link-than-will-drop-down">
+              <a href="#" class="header__middle-nav_link flex align-center">Clothes <img src="./assets/img/downarrow.svg" alt="Down arrow icon" /></a>
+              <div class="nav-header__dropdown">
+                <ul class="nav-header__dropdown-box">
+                    <li>
+                        <a href="#" class="header__middle-nav_link">მაისურები</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__middle-nav_link">კეპები</a>
+                    </li>
+                    <li>
+                      <a href="#" class="header__middle-nav_link">ჰუდები</a>
+                  </li>
+                  <li>
+                      <a href="#" class="header__middle-nav_link">ჩანთები</a>
+                  </li>
+                </ul>
+              </div>
             <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Gifts</a></li>
             <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Sales</a></li>
           </ul>
@@ -78,6 +102,7 @@
           </ul>
         </nav>
       </div>
+    </div>
       </header>
       <header class="header-mobile flex align-center space-between">
         <div class="header-mobile__left-side flex align-center">
@@ -112,9 +137,9 @@
     </div>
       
     </main>
-      <section class="section-single-product">
+      <section class="section-single-product after-header">
         <div class="single-product__box grid container">
-          <div class="single-product__left-side grid parent-border">
+          <div class="single-product__left-side grid parent-border swiper-not-mobile">
             <div class="single-product-img small-one">
               <img
                 src="assets/img/hoodie.png"
@@ -145,6 +170,40 @@
             </div>
             
           </div>
+          <div class="swiper swiper-mobile-single swiper-mobile">
+            <div class="swiper-wrapper">
+              <div class="single-product-img swiper-slide single-product-img__mobile">
+                <img
+                  src="assets/img/hoodie.png"
+                  alt="Single product image"
+                  class="img"
+                />
+              </div>
+              <div class="single-product-img swiper-slide single-product-img__mobile">
+                <img
+                  src="assets/img/hoodie.png"
+                  alt="Single product image"
+                  class="img"
+                />
+              </div>
+              <div class="single-product-img swiper-slide single-product-img__mobile">
+                <img
+                  src="assets/img/hoodie-back.png"
+                  alt="Single product image"
+                  class="img"
+                />
+              </div>
+              <div class="single-product-img swiper-slide single-product-img__mobile">
+                <img
+                  src="./assets/img/hoodie-back.png"
+                  alt="Single product image"
+                  class="img"
+                />
+              </div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
           <div class="single-product-right-side flex flex-column">
             <div class="single-product__headings">
             <h2 class="single-product__title">National Team Hoodie Number 12</h2>
@@ -172,9 +231,9 @@
               </div>
             </div>
             <div class="section-special-products__header-border"></div>
-            <div class="single-product__quantity">
+            <div class="single-product__quantity ">
               <h3 class="heading-tertiary">Quantity</h3>
-              <div class="single-product__quantity-box flex align-center">
+              <div class="single-product__quantity-box flex align-center flex-wrap">
               <input type="number" name="" id="" class="quantity-input" value="1">
               <button class="btn btn-add-to-cart align-center"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" class="cart-icon" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.80566 20.5C5.31365 20.5 4.89545 20.3248 4.55105 19.9743C4.20664 19.6239 4.03444 19.1984 4.03444 18.6977C4.03444 18.1971 4.20664 17.7716 4.55105 17.4212C4.89545 17.0707 5.31365 16.8955 5.80566 16.8955C6.28126 16.8955 6.69537 17.0707 7.04797 17.4212C7.40057 17.7716 7.57688 18.1971 7.57688 18.6977C7.57688 19.1984 7.40467 19.6239 7.06027 19.9743C6.71587 20.3248 6.29766 20.5 5.80566 20.5ZM15.6458 20.5C15.1538 20.5 14.7355 20.3248 14.3911 19.9743C14.0467 19.6239 13.8745 19.1984 13.8745 18.6977C13.8745 18.1971 14.0467 17.7716 14.3911 17.4212C14.7355 17.0707 15.1538 16.8955 15.6458 16.8955C16.1214 16.8955 16.5355 17.0707 16.8881 17.4212C17.2407 17.7716 17.417 18.1971 17.417 18.6977C17.417 19.1984 17.2448 19.6239 16.9004 19.9743C16.556 20.3248 16.1378 20.5 15.6458 20.5ZM4.52644 3.97935L7.23247 9.68648H14.3173L17.3924 3.97935H4.52644ZM2.87823 15.2935L5.65806 10.062L1.91882 2.00188H0V0.5H2.87823L3.78844 2.47747H20L15.2522 11.1884H6.71587L5.33825 13.7916H17.417V15.2935H2.87823ZM7.23247 9.68648H14.3173H7.23247Z" fill="black"/>
@@ -183,22 +242,59 @@
                 <path d="M10 18.6654L8.975 17.7399C6.25833 15.2555 4.08333 13.0878 2.45 11.237C0.816666 9.38615 0 7.51029 0 5.60943C0 4.10875 0.504167 2.85401 1.5125 1.84522C2.52083 0.836427 3.76667 0.332031 5.25 0.332031C6.1 0.332031 6.94167 0.536291 7.775 0.94481C8.60833 1.35333 9.35 2.02447 10 2.95823C10.7333 2.02447 11.4917 1.35333 12.275 0.94481C13.0583 0.536291 13.8833 0.332031 14.75 0.332031C16.2333 0.332031 17.4792 0.836427 18.4875 1.84522C19.4958 2.85401 20 4.10875 20 5.60943C20 7.51029 19.1833 9.38615 17.55 11.237C15.9167 13.0878 13.7417 15.2555 11.025 17.7399L10 18.6654ZM10 16.6895C12.5333 14.3551 14.5833 12.3292 16.15 10.6117C17.7167 8.89426 18.5 7.22683 18.5 5.60943C18.5 4.50893 18.1458 3.60435 17.4375 2.8957C16.7292 2.18704 15.8333 1.83271 14.75 1.83271C13.9167 1.83271 13.1333 2.09116 12.4 2.60807C11.6667 3.12497 11.0667 3.86697 10.6 4.83408H9.375C8.925 3.86697 8.32917 3.12497 7.5875 2.60807C6.84583 2.09116 6.06667 1.83271 5.25 1.83271C4.15 1.83271 3.25 2.18704 2.55 2.8957C1.85 3.60435 1.5 4.50893 1.5 5.60943C1.5 7.22683 2.28333 8.89426 3.85 10.6117C5.41667 12.3292 7.46667 14.3551 10 16.6895Z" fill="black"/>
                 </svg> Add to wishlist</button>
               </div>
+              <div class="quantity-box">
+                <div class="number-input">
+                  <button
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus"
+                  >
+                  <img src="assets/img/uparrow-bigone.svg" alt="arrow-down" />
+                  </button>
+
+                  <input
+                    class="quantity-input-mobile quantity-input"
+                    min="0"
+                    name="quantity"
+                    value="1"
+                    type="number"
+                  />
+                  <button
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus"
+                  >
+                  <img src="assets/img/uparrow-bigone.svg" alt="arrow-up" /> 
+                  </button>
+                </div>
+                <button class="btn btn-add-to-cart align-center">
+                  <svg width="20" height="21" viewBox="0 0 20 21" fill="none" class="cart-icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.80566 20.5C5.31365 20.5 4.89545 20.3248 4.55105 19.9743C4.20664 19.6239 4.03444 19.1984 4.03444 18.6977C4.03444 18.1971 4.20664 17.7716 4.55105 17.4212C4.89545 17.0707 5.31365 16.8955 5.80566 16.8955C6.28126 16.8955 6.69537 17.0707 7.04797 17.4212C7.40057 17.7716 7.57688 18.1971 7.57688 18.6977C7.57688 19.1984 7.40467 19.6239 7.06027 19.9743C6.71587 20.3248 6.29766 20.5 5.80566 20.5ZM15.6458 20.5C15.1538 20.5 14.7355 20.3248 14.3911 19.9743C14.0467 19.6239 13.8745 19.1984 13.8745 18.6977C13.8745 18.1971 14.0467 17.7716 14.3911 17.4212C14.7355 17.0707 15.1538 16.8955 15.6458 16.8955C16.1214 16.8955 16.5355 17.0707 16.8881 17.4212C17.2407 17.7716 17.417 18.1971 17.417 18.6977C17.417 19.1984 17.2448 19.6239 16.9004 19.9743C16.556 20.3248 16.1378 20.5 15.6458 20.5ZM4.52644 3.97935L7.23247 9.68648H14.3173L17.3924 3.97935H4.52644ZM2.87823 15.2935L5.65806 10.062L1.91882 2.00188H0V0.5H2.87823L3.78844 2.47747H20L15.2522 11.1884H6.71587L5.33825 13.7916H17.417V15.2935H2.87823ZM7.23247 9.68648H14.3173H7.23247Z" fill="black"/>
+                    </svg>
+                  Add to cart
+                </button>
+                <button class="btn btn-add-to-wishlist align-center">
+                  <svg width="20" height="19" viewBox="0 0 20 19" fill="none" class="heart-icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 18.6654L8.975 17.7399C6.25833 15.2555 4.08333 13.0878 2.45 11.237C0.816666 9.38615 0 7.51029 0 5.60943C0 4.10875 0.504167 2.85401 1.5125 1.84522C2.52083 0.836427 3.76667 0.332031 5.25 0.332031C6.1 0.332031 6.94167 0.536291 7.775 0.94481C8.60833 1.35333 9.35 2.02447 10 2.95823C10.7333 2.02447 11.4917 1.35333 12.275 0.94481C13.0583 0.536291 13.8833 0.332031 14.75 0.332031C16.2333 0.332031 17.4792 0.836427 18.4875 1.84522C19.4958 2.85401 20 4.10875 20 5.60943C20 7.51029 19.1833 9.38615 17.55 11.237C15.9167 13.0878 13.7417 15.2555 11.025 17.7399L10 18.6654ZM10 16.6895C12.5333 14.3551 14.5833 12.3292 16.15 10.6117C17.7167 8.89426 18.5 7.22683 18.5 5.60943C18.5 4.50893 18.1458 3.60435 17.4375 2.8957C16.7292 2.18704 15.8333 1.83271 14.75 1.83271C13.9167 1.83271 13.1333 2.09116 12.4 2.60807C11.6667 3.12497 11.0667 3.86697 10.6 4.83408H9.375C8.925 3.86697 8.32917 3.12497 7.5875 2.60807C6.84583 2.09116 6.06667 1.83271 5.25 1.83271C4.15 1.83271 3.25 2.18704 2.55 2.8957C1.85 3.60435 1.5 4.50893 1.5 5.60943C1.5 7.22683 2.28333 8.89426 3.85 10.6117C5.41667 12.3292 7.46667 14.3551 10 16.6895Z" fill="black"/>
+                    </svg> 
+                  Add to wishlist
+                </button>
+              </div>
             </div>
           </div>
         </div>
 
         <aside class="advertisement container">
-           <img src="assets/img/nakrebige.png" alt="advertisement" class="img">
+           <img src="assets/img/nakrebige.png" alt="advertisement" class="img advertisement-not-mobile">
+            <div class="advertisement-mobile"><img src="assets/img/mevarsaqartvelo-mobile.png" alt="advertisement" class="img"></div>
         </aside>
 
         <div class="similar-products ">
           <div class="out-container">
-          <header class="section-special-products__header tablet-margins">
-            <h2 class="heading-secondary">მსგავსი პროდუქცია</h2>
-            <div class="section-special-products__header-border"></div>
-            <a href="#" class="btn btn-primary">მეტის ნახვა</a>
-          </header>
-        </div>
+            <header class="section-special-products__header tablet-margins">
+              <h2 class="heading-secondary">მსგავსი პროდუქცია</h2>
+              <div class="section-special-products__header-border horizontal-border"></div>
+              <a href="#" class="btn btn-primary metis-naxva">მეტის ნახვა</a>
+            </header>
+          </div>
           <div class="similar-products-box container grid grid--4-cols">
             <div class="similar-product flex flex-column align-center">
               <img class="similar-product__img img" src="assets/img/product-3.png" alt="product">
@@ -232,7 +328,10 @@
               <img class="similar-product__img img" src="assets/img/product-4.png" alt="product">
               <h4 class="sub-heading similar-product__title">წითელი ფან მაისური ანიმაციით 2022 </h4>
             </div>
+
           </div>
+          <a href="#" class="btn btn-primary metis-naxva metis-naxva-mobile">მეტის ნახვა</a>
+
         </div>
       </section>
 

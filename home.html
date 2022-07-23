@@ -39,14 +39,37 @@
         <nav class="header__nav flex align-center space-between">
           <ul class="header__middle-nav_ul flex align-center">
             <li class="header__middle-nav_list"><a href="index.html" class="header__middle-nav_link">Home</a></li>
-            <li class="header__middle-nav_list flex align-center">
-              <a href="home.html" class="header__middle-nav_link ">GNT Kit</a>
-              <img src="./assets/img/downarrow.svg" alt="Down arrow icon" />
+            <li class="header__middle-nav_list link-than-will-drop-down">
+              <a href="home.html" class="header__middle-nav_link flex align-center">GNT Kit  <img src="./assets/img/downarrow.svg" alt="Down arrow icon" /></a>
+              <div class="nav-header__dropdown">
+                <ul class="nav-header__dropdown-box">
+                    <li>
+                        <a href="#" class="header__middle-nav_link">კოლექცია 2022</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__middle-nav_link">კოლექცია 2021</a>
+                    </li>
+                </ul>
+              </div>
             </li>
-            <li class="header__middle-nav_list flex align-center">
-              <a href="#" class="header__middle-nav_link">Clothes</a>
-              <img src="./assets/img/downarrow.svg" alt="Down arrow icon" />
-            </li class="header__middle-nav_list">
+            <li class="header__middle-nav_list link-than-will-drop-down">
+              <a href="#" class="header__middle-nav_link flex align-center">Clothes <img src="./assets/img/downarrow.svg" alt="Down arrow icon" /></a>
+              <div class="nav-header__dropdown">
+                <ul class="nav-header__dropdown-box">
+                    <li>
+                        <a href="#" class="header__middle-nav_link">მაისურები</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__middle-nav_link">კეპები</a>
+                    </li>
+                    <li>
+                      <a href="#" class="header__middle-nav_link">ჰუდები</a>
+                  </li>
+                  <li>
+                      <a href="#" class="header__middle-nav_link">ჩანთები</a>
+                  </li>
+                </ul>
+              </div>
             <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Gifts</a></li>
             <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Sales</a></li>
           </ul>
@@ -146,7 +169,17 @@
                 <option value="low-high">Low to High</option>
               </select>
             </form>
+            <button class="btn btn-filter-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-svg">
+                <path d="M16.48 16.5368H19M2.68 10L1 10.044M2.68 10C2.68 11.3255 3.75451 12.4 5.08 12.4C6.40548 12.4 7.48 11.3255 7.48 10C7.48 8.67452 6.40548 7.6 5.08 7.6C3.75451 7.6 2.68 8.67452 2.68 10ZM8.16898 10.0441H19M10.801 3.55124L1 3.55124M19 3.55124H16.48M1 16.5368H10.801M15.88 16.6C15.88 17.9255 14.8055 19 13.48 19C12.1545 19 11.08 17.9255 11.08 16.6C11.08 15.2745 12.1545 14.2 13.48 14.2C14.8055 14.2 15.88 15.2745 15.88 16.6ZM15.88 3.4C15.88 4.72548 14.8055 5.8 13.48 5.8C12.1545 5.8 11.08 4.72548 11.08 3.4C11.08 2.07452 12.1545 1 13.48 1C14.8055 1 15.88 2.07452 15.88 3.4Z" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </button>
         </header>
+        <div class="filter-box__mobile flex align-center space-around">
+          <button class="btn btn-filter align-center">Category <img src="assets/img/downarrow.svg" alt="arrow"></button>
+          <button class="btn btn-filter align-center">Size <img src="assets/img/downarrow.svg" alt="arrow"></button>
+          <button class="btn btn-filter align-center">Color <img src="assets/img/downarrow.svg" alt="arrow"></button>
+        </div>
         <div class="container grid product-archive__content">
         <div class="product-archive__filters-box flex flex-column">
 
