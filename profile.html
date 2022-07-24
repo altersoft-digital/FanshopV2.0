@@ -27,7 +27,7 @@
     <title>GGF Fan Shop - ოფიცალური</title>
   </head>
   <body>
-    <main class="main-header long-container">
+    <main class="main-header">
       <header class="header ">
         <div class="out-container">
         <div class="header-box tablet-margins">
@@ -122,13 +122,27 @@
       <nav class="mobile-nav">
         <ul class="header__middle-nav_ul flex flex-column">
           <li class="header__middle-nav_list"><a href="index.html" class="header__middle-nav_link">Home</a></li>
-          <li class="header__middle-nav_list flex align-center space-between">
-            <a href="home.html" class="header__middle-nav_link ">GNT Kit</a>
-            <img src="./assets/img/downarrow.svg" alt="Down arrow icon" />
+          <li class="header__middle-nav_list">
+            <div class="drop-down__before-box flex align-center space-between">
+              <a href="home.html" class="header__middle-nav_link ">GNT Kit</a>
+              <img src="./assets/img/downarrow.svg" alt="Down arrow icon" />
+            </div>
+            <ul class="footer-nav-ul flex flex-column drop-down__hidden-box">
+              <li class="footer-nav-list"><a class="footer-nav-link" href="#">კოლექცია 2022</a></li>
+              <li class="footer-nav-list"><a class="footer-nav-link" href="#">კოლექცია 2021</a></li>
+            </ul>
           </li>
-          <li class="header__middle-nav_list flex align-center space-between">
-            <a href="#" class="header__middle-nav_link">Clothes</a>
-            <img src="./assets/img/downarrow.svg" alt="Down arrow icon" />
+          <li class="header__middle-nav_list">
+            <div class="drop-down__before-box flex align-center space-between">
+              <a href="#" class="header__middle-nav_link">Clothes</a>
+              <img src="./assets/img/downarrow.svg" alt="Down arrow icon" />
+            </div>
+          <ul class="footer-nav-ul flex flex-column drop-down__hidden-box">
+            <li class="footer-nav-list"><a class="footer-nav-link" href="#">მაისურები</a></li>
+            <li class="footer-nav-list"><a class="footer-nav-link" href="#">კეპები</a></li>
+            <li class="footer-nav-list"><a class="footer-nav-link" href="#">ჰუდები</a></li>
+            <li class="footer-nav-list"><a class="footer-nav-link" href="#">ჩანთები</a></li>
+          </ul>
           </li class="header__middle-nav_list">
           <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Gifts</a></li>
           <li class="header__middle-nav_list"><a href="#" class="header__middle-nav_link">Sales</a></li>
@@ -138,7 +152,7 @@
       
     </main>
 
-    <section class="section-profile out-container">
+    <section class="section-profile out-container mgn-32">
       <div class="profile-header tablet-margins">
         <div class="profile-welcome-msg-box">
         <h1 class="heading-profile">გამარჯობა, David 👋🏻</h1>
@@ -163,19 +177,18 @@
           </ul>
         </nav>
 
-      </div>
-      <div class="orders-main-box section-profile__subsec">
+    
+      <div class="orders-main-box section-profile__subsec active">
       <table class="orders-table--mobile">
         <tbody>
           <tr>
             <!-- tabel data -->
             <td>
-              <span class="table-status-icon icon--green">
                 <img
-                  src="./img/checked-icon.svg"
-                  alt="Status Completed icon"
+                  src="assets/img/successfull.png"
+                  alt="status"
+                  class="table-status"
                 />
-              </span>
               #7924
             </td>
             <td>190.00 GEL</td>
@@ -185,12 +198,11 @@
           <tr>
             <!-- tabel data -->
             <td>
-              <span class="table-status-icon icon--yellow">
                 <img
-                  src="./img/checked-yellow.svg"
-                  alt="Status Completed icon"
+                  src="assets/img/pending.png"
+                  alt="status"
+                  class="table-status"
                 />
-              </span>
               #7924
             </td>
             <td>190.00 GEL</td>
@@ -200,12 +212,11 @@
           <tr>
             <!-- tabel data -->
             <td>
-              <span class="table-status-icon icon--red">
                 <img
-                  src="./img/union-icon.svg"
-                  alt="Status Completed icon"
+                  src="assets/img/failed.png"
+                  alt="status"
+                  class="table-status"
                 />
-              </span>
               #7924
             </td>
             <td>190.00 GEL</td>
@@ -215,12 +226,11 @@
           <tr>
             <!-- tabel data -->
             <td>
-              <span class="table-status-icon icon--green">
                 <img
-                  src="./img/checked-icon.svg"
-                  alt="Status Completed icon"
+                  src="assets/img/successfull.png"
+                  alt="status"
+                  class="table-status"
                 />
-              </span>
               #7924
             </td>
             <td>190.00 GEL</td>
@@ -230,12 +240,11 @@
           <tr>
             <!-- tabel data -->
             <td>
-              <span class="table-status-icon icon--green">
                 <img
-                  src="./img/checked-icon.svg"
-                  alt="Status Completed icon"
+                  src="assets/img/successfull.png"
+                  alt="status"
+                  class="table-status"
                 />
-              </span>
               #7924
             </td>
             <td>190.00 GEL</td>
@@ -245,12 +254,11 @@
           <tr>
             <!-- tabel data -->
             <td>
-              <span class="table-status-icon icon--green">
                 <img
-                  src="./img/checked-icon.svg"
-                  alt="Status Completed icon"
+                  src="assets/img/successfull.png"
+                  alt="status"
+                  class="table-status"
                 />
-              </span>
               #7924
             </td>
             <td>190.00 GEL</td>
@@ -260,12 +268,11 @@
           <tr>
             <!-- tabel data -->
             <td>
-              <span class="table-status-icon icon--green">
                 <img
-                  src="./img/checked-icon.svg"
-                  alt="Status Completed icon"
+                  src="assets/img/successfull.png"
+                  alt="status"
+                  class="table-status"
                 />
-              </span>
               #7924
             </td>
             <td>190.00 GEL</td>
@@ -275,12 +282,11 @@
           <tr>
             <!-- tabel data -->
             <td>
-              <span class="table-status-icon icon--green">
                 <img
-                  src="./img/checked-icon.svg"
-                  alt="Status Completed icon"
+                  src="assets/img/successfull.png"
+                  alt="status"
+                  class="table-status"
                 />
-              </span>
               #7924
             </td>
             <td>190.00 GEL</td>
@@ -353,10 +359,34 @@
       </table>
     </div>
     <div class="shipping-address-box section-profile__subsec">
-      Shipping address
+      <div class="checkout__right grid grid--2-cols">
+        <input type="text" name="first-name" placeholder="First Name">
+        <input type="text" name="last-name" placeholder="Last Name">
+        <input type="text" name="phone-number" placeholder="Phone Number">
+        <input type="text" name="email" placeholder="Email">
+        <input type="text" name="country" placeholder="Country">
+        <input type="text" name="city" placeholder="City">
+        <input type="text" name="address" placeholder="Shipping Address">
+        <input type="text" name="additional-details" placeholder="Additional Shipping Details">
+        <textarea name="comment" id="" cols="30" rows="3" placeholder="Comment (Optional)"></textarea>
+      <button class="btn btn-primary btn-shipping-save">Save Changes</button>
+      </div>
     </div>
     <div class="account-details-box section-profile__subsec">
-      Account details
+      <div class="checkout__right grid grid--2-cols">
+        <input type="text" name="first-name" placeholder="First Name">
+        <input type="text" name="last-name" placeholder="Last Name">
+        <input type="text" name="phone-number" placeholder="Phone Number">
+        <input type="text" name="email" placeholder="Email">
+        <div class="change-password-box grid grid--3-cols">
+          <h4 class="sub-heading">Change Password</h4>
+          <input type="password" name="current" placeholder="Current Password">
+          <input type="password" name="new" placeholder="New Password">
+          <input type="password" name="repeat" placeholder="Repeat New Password" class="repeat">
+        </div>
+       
+      <button class="btn btn-primary btn-shipping-save">Save Changes</button>
+      </div>
     </div>
   </div>
     </section>

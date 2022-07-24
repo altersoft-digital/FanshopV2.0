@@ -163,6 +163,11 @@ select {
   font-style: italic;
 }
 
+.mgn-32 {
+  transition: none;
+  margin-top: 3.2rem;
+}
+
 .heading-secondary {
   font-style: italic;
   font-size: 2.4rem;
@@ -195,7 +200,7 @@ select {
 
   text-decoration: none;
   background: none;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.1rem;
   color: #ffffff;
